@@ -31,7 +31,8 @@ body {
 .country-name-little {
   font-size: 15px;
   font-weight: 600;
-  
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .flag-little {
   max-width: 30px;
