@@ -1,7 +1,6 @@
 const countryInfo = document.querySelector(".country-info");
 const countryList = document.querySelector(".country-list");
 export function makeMarkup(data) {
-    console.log(data)
   if (data.length >= 10) {
     return Notiflix.Notify.info("Too many matches found. Please enter a more specific name.")
   }
@@ -18,7 +17,7 @@ export function makeMarkup(data) {
             } else {
       const markupInfo = data.map((country) => {
           const arrName = [];
-          const arr = country.languages.forEach(element => {
+          country.languages.forEach(element => {
               arrName.push(element.name) 
           });
      return `<li class="item">
